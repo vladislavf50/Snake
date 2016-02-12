@@ -1,0 +1,6 @@
+C:\Users\Владислав\Desktop\Snake\MyFirstSnake\MyFirstSnake\bin\Debug\MyFirstSnake.exe.config
+C:\Users\Владислав\Desktop\Snake\MyFirstSnake\MyFirstSnake\bin\Debug\MyFirstSnake.exe
+C:\Users\Владислав\Desktop\Snake\MyFirstSnake\MyFirstSnake\bin\Debug\MyFirstSnake.pdb
+C:\Users\Владислав\Desktop\Snake\MyFirstSnake\MyFirstSnake\obj\Debug\MyFirstSnake.csprojResolveAssemblyReference.cache
+C:\Users\Владислав\Desktop\Snake\MyFirstSnake\MyFirstSnake\obj\Debug\MyFirstSnake.exe
+C:\Users\Владислав\Desktop\Snake\MyFirstSnake\MyFirstSnake\obj\Debug\MyFirstSnake.pdb
