@@ -13,12 +13,6 @@ namespace MyFirstSnake
         {
             Console.SetBufferSize(80, 25);
 
-            //рисуем точечки
-            Point p = new Point(4, 5, '*');
-            Snake snake = new Snake(p, 4, direction.RIGHT);
-            snake.Draw();
-            snake.Move();
-
             //рисуем рамочку
             gorizontalline upline = new gorizontalline(0,78,0,'+');
             verticline leftline = new verticline(0, 24, 0, '+');
@@ -28,31 +22,35 @@ namespace MyFirstSnake
             leftline.Draw();
             downline.Draw();
             rightline.Draw();
+            
+            //рисуем точечки
+            Point p = new Point(4, 5, '*');
+            Snake snake = new Snake(p, 4, direction.RIGHT);
+            snake.Draw();
 
-            Thread.Sleep(300);
-            snake.Move();
-            Thread.Sleep(300);
-            snake.Move();
-            Thread.Sleep(300);
-            snake.Move();
-            Thread.Sleep(300);
-            snake.Move();
-            Thread.Sleep(300);
-            snake.Move();
-            Thread.Sleep(300);
-            snake.Move();
-            Thread.Sleep(300);
-            snake.Move();
-            Thread.Sleep(300);
-            snake.Move();
-            Thread.Sleep(300);
-            snake.Move();
-            Thread.Sleep(300);
-            snake.Move();
-            Thread.Sleep(300);
-            snake.Move();
+            while (true)
+            {
+                if (Console.KeyAvailable)
+                {
+                    ConsoleKeyInfo key = Console.ReadKey();
+                    if (key.Key == ConsoleKey.LeftArrow)
+                        snake.direction = direction.LEFT;
+                    else if (key.Key == ConsoleKey.RightArrow)
+                        snake.direction = direction.RIGHT;
+                     else if (key.Key == ConsoleKey.DownArrow)
+                        snake.direction = direction.DOWN;
+                     else if (key.Key == ConsoleKey.UpArrow)
+                        snake.direction = direction.UP;
 
+                }
+            }
+
+                    Thread.Sleep(300);
+                snake.Move();
+                Thread.Sleep(300);
+                snake.Move();
+               }
 
         }
     }
-}
+

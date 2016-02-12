@@ -8,8 +8,8 @@ namespace MyFirstSnake
 {
     class Snake : Figura
     {
-        direction direction;
-        public Snake(Point tail, int lenght, direction direction)
+        public direction direction;
+            public Snake(Point tail, int lenght, direction direction)
         {
             plist = new List<Point>();
             for (int i=0; i < lenght; i++)

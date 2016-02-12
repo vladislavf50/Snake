@@ -40,11 +40,11 @@ namespace MyFirstSnake
             }
             if (direction == direction.UP)
             {
-                y = y + offset;
+                y = y - offset;
             }
            else if (direction == direction.DOWN)
             {
-                y = y - offset;
+                y = y + offset;
             }
         }
 
